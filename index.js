@@ -18,6 +18,10 @@ app.use(bodyParser.json());
 app.use('/auth', authRouter);
 app.use('/api/products', authentication, productsRouter);
 
+app.get('/', (req, res) => {
+  res.send('✅ API REST funcionando correctamente en producción 🚀');
+});
+
 // Ruta por defecto (404)
 app.use((req, res) => {
   res.status(404).json({ error: 'Ruta no encontrada' });
