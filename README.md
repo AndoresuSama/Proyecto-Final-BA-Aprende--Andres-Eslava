@@ -86,15 +86,17 @@ git checkout deploy-vercel
 
 3. Agregá una variable llamada `FIREBASE_CONFIG` con el contenido de tu `serviceAccountKey.json` **en una sola línea**.
 
-> ⚠️ Esta variable se define **solo en el entorno de Vercel**. **No la escribas directamente en tu código** para evitar exponer credenciales.
+> ⚠️ Esta variable debe definirse **solo en Vercel**, no escribas esa línea en tu código fuente para evitar exponer tus credenciales.
 
 4. Vercel utilizará esa rama para desplegar la API y mantener tus claves seguras sin subir archivos.
 
-5. Podés ver la API en línea en:
+5. ✅ API desplegada y funcionando en:
 
 ```
 https://proyecto-final-ba-aprende-andres-es.vercel.app/
 ```
+
+Podés probar los endpoints directamente desde esa URL.
 
 ---
 
